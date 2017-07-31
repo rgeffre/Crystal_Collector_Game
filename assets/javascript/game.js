@@ -12,27 +12,42 @@
     $(document).ready(function() {
 
       // Make our variables global to the runtime of our application
-      var firstNumber;
-      var secondNumber;
-      var operator;
-      var result;
-      var isOperatorChosen;
-      var isCalculated;
+      var winCount
+      var lossCount
+      var scoreNum
 
-      // Use a function to initialize our calculator.
-      // This way when the user hits clear, we can guarantee a reset of the app.
-      function initializeCalculator() {
-        firstNumber = "";
-        secondNumber = "";
-        operator = "";
-        isOperatorChosen = false;
-        isCalculated = false;
+      //generate random number and display in the Match Number Panel
 
-        $("#first-number, #second-number, #operator, #result").empty();
+      function randomIntFromInterval(19,100)
+      {
+      return Math.floor(Math.random()*(max-min+1)+min);
+      $(#randomNum).html() //  send this data to the panel id
       }
 
+      // Each button generates a number between 1 and 12.  These numbers will change
+      // when the app is reset.
+      
+      var savedNum = Math.floor(Math.random() * 12) + 1);
+
+      $("#buttonAmethyst").click(function() {
+      $("#scoreNum").html((Math.floor(Math.random() * 12) + 1));
+      });
+
+      $("#buttonPeridot").click(function() {
+      $("#scoreNum").html((Math.floor(Math.random() * 12) + 1));
+      });
+
+      $("#buttonZircon").click(function() {
+      $("#scoreNum").html((Math.floor(Math.random() * 12) + 1));
+      });
+
+      $("#buttonAqua").click(function() {
+      $("#scoreNum").html((Math.floor(Math.random() * 12) + 1));
+
+      });
+
       // Add an on click listener to all elements that have the class "number"
-      $(".number").on("click", function() {
+      $(".crystal").on("click", function() {
 
         // Check if we've already run a calculation, if so... we'll just.
         if (isCalculated) return;
