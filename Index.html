@@ -1,10 +1,97 @@
-//Build four buttons that are displayed as crystals
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+	<!-- Added link to the jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Added a link to Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Added css stylesheet to set custom styles -->
+	<link rel="stylesheet" href="assets/css/style.css">
 
-//Show the player a random number at the start of the game.
+</head>
+<body>
 
-//when the player clicks on a crystal, it will add a specific number of points to the players total score.
-	//Hide the amount until a player clicks a crystal
+	<div class="jumbotron">
+  	<div class="container">
+    	<h1 class="text-center">Crystal Collector</h1>
+    	<h3 class= "text-center">Game Rules</h3>
+      	<ul class="list-group text-center">
+         	<li class="list-group-item">A random number is displayed at the start of the game</li>
+         	<li class="list-group-item">Click on the crystals below to add points to your score. <strong> Watch out!</strong> The value of each crystal will only be displayed after you click on it!</li>
+         	<li class="list-group-item">Win the game by matching the random number displayed</li>
+         	<li class="list-group-item">Go over the random number and you lose!</li>
+         	<li class="list-group-item">The crystals values reset when a new game starts.</li>
+      	</ul>
+  	</div>
+	</div>
 
-	//when a player clicks on crystal, update the players score
+	<div class="container">
+  	<div class="row">
+			<!-- Random Number Panel -->
+    	<div class="col-lg-4">
+    	 	<div class="panel panel-default">
+        	<div class="panel-heading">
+          	<h3 class="panel-title">Match This Number</h3>
+        	</div> <!--Panel heading -->
 
-//
+        	<div class="panel-body">
+          	Panel content
+        	</div> <!-- Panel Body -->
+     		</div>
+
+    	<!-- Players Accumulated Score Panel -->
+    	<div class="col-lg-4">
+    	<div class="w-100">
+    	  <div class="panel panel-default">
+        	<div class="panel-heading">
+          	<h3 class="panel-title">Players Accumulated Score</h3>
+        	</div>
+
+        	<div class="panel-body">
+           	Panel content
+        	</div> <!-- Panel Body -->
+     		</div> <!-- Panel default -->
+   	 	</div> <!-- Panel column -->
+		</div>
+
+		<div class="row">
+
+				<!-- Crystal Buttons Panel-->
+		 		<div class="col-lg-8">
+		 			<div class="panel panel-default">
+  	  			<div class="panel-heading">Panel heading without title</div>
+  	   				<div class="panel-body">
+         				Panel content
+       				</div>
+     				</div> <!-- Panel heading -->
+     			</div> <!-- Panel default -->
+     		</div> <!-- Panel column -->
+     	</div> <!-- Panel Row -->
+
+			<div class="row">
+
+				<!-- Results Panel -->
+				<div class="col-lg-8">
+					<div class="panel panel-default">
+     				<div class="panel-heading">
+       				<h3 class="panel-title">Results</h3>
+     				</div>
+
+     				<div class="panel-body">
+       				Panel content
+     				</div>
+					</div> <!-- Panel heading -->
+				</div> <!-- Panel default -->
+     		</div> <!-- Panel column -->
+     	</div> <!-- Panel Row -->
+    </div>
+	</div> <!-- Container -->
+
+</body>
+</html>
+
+
+
+

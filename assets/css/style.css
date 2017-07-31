@@ -1,0 +1,26 @@
+.jumbotron {
+	background-color: #9542FF;
+}
+
+/* Added responsive background image*/
+body {
+	background: url("../images/gamebackground.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-color: #17EBCE
+
+}
+
+.random > div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1em;
+}
+
+.score > div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1em;
+}
