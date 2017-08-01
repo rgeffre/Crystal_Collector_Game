@@ -13,14 +13,3 @@ body {
 
 }
 
-.random > div {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 1em;
-}
-
-.score > div {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 1em;
-}
